@@ -25,11 +25,37 @@ table {
   text-align: center;
 }
 
+th:nth-child(1) {
+  width: 30%;
+}
+
+td:nth-child(1) {
+  width: 30%;
+}
+
+th:nth-child(2) {
+  width: 30%;
+}
+
+td:nth-child(2) {
+  width: 30%;
+}
+
+
+th:nth-child(3) {
+  width: 30%;
+}
+
+td:nth-child(3) {
+  width: 30%;
+}
+
+
 th:nth-child(4) {
   width: 10%;
 }
 
-tr:nth-child(4) {
+td:nth-child(4) {
   width: 10%;
 }
 

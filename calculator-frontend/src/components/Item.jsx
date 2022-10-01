@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Item() {
+function Item(props) {
   return (
     <tr>
-      <td> Test item </td>
-      <td> 10 </td>
-      <td> $5.99 </td>
+      <td> {props.name} </td>
+      <td> {props.quantity} </td>
+      <td> {props.price} </td>
       <td> <button className="deleteButton">-</button></td>
     </tr>
   );

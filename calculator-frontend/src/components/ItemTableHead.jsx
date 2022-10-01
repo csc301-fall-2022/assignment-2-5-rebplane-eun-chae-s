@@ -3,14 +3,17 @@ import Item from "./Item"
 
 function ItemTable(props) {
 
-  console.log(props);
-
   return (
     <div>
       <table>
-        <tbody>
-        {/* Send the mapped values to map to Item rows*/}
-        </tbody>
+      <thead>
+        <tr>
+          <th>Item Name</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Delete</th>
+        </tr>
+        </thead>
       </table>
     </div>
   );
