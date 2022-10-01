@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Header from "./Header";
-import ItemTable from "./ItemTable";
 import CreateItem from "./CreateItem";
 import Calculate from "./Calculate";
 import ItemTableHead from "./ItemTableHead";
@@ -16,8 +15,12 @@ function App() {
       });
   }
 
-  function deleteItem(event) {
-
+  function deleteItem(id) {
+      setItems(prevItems => {
+        return prevItems.filter((item, index) => {
+          return index !== id
+        });
+      });
   }
 
   return (
@@ -34,7 +37,8 @@ function App() {
               id={index}
               name={item.name}
               quantity={item.quantity}
-              price={item.price}/>
+              price={item.price}
+              deleteItem={deleteItem}/>
           )
         })}
         </tbody>

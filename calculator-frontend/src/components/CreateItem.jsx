@@ -9,7 +9,6 @@ function CreateItem(props) {
   });
 
   function handleChange(event) {
-    const { varName, varValue } = event.target;
     setItem(prevItem => {
       return {
         ...prevItem,
@@ -19,14 +18,18 @@ function CreateItem(props) {
   }
 
   function submitItem(event) {
-    console.log(item)
-    props.addItem(item)
-    {/* Reset the item state variables*/}
-    setItem({
-      name: "",
-      quantity: 0,
-      price: 0
-    })
+    if (item.name !== "" && item.quantity > 0 && item.price >= 0) {
+      props.addItem(item)
+      {/* Reset the item state variables*/}
+      setItem({
+        name: "",
+        quantity: 0,
+        price: 0
+      })
+    }
+    else {
+      alert("Plase enter a valid item name, quantity and price.")
+    }
     {/* Prevents page refresh */}
     event.preventDefault();
   }
@@ -35,11 +38,11 @@ function CreateItem(props) {
     <div className="form">
         <form className="createItem">
         Item Name <br/>
-        <input onChange={handleChange} name="name" value={item.name} placeholder="Item Name"/> <br/>
+        <input onChange={handleChange} name="name" value={item.name} placeholder="Item Name" required/> <br/>
         Quantity <br/>
-        <input type="number" onChange={handleChange} name="quantity" value={item.quantity} placeholder="Quantity"/><br/>
+        <input type="number" onChange={handleChange} name="quantity" value={item.quantity} placeholder="Quantity" required/><br/>
         Price <br/>
-        <input type="number" onChange={handleChange} name="price" value={item.price} placeholder="Price"/><br/>
+        <input type="number" onChange={handleChange} name="price" value={item.price} placeholder="Price" required/><br/>
         <button className="largeButton" onChange={handleChange} onClick={submitItem}> Add Item </button>
         </form>
     </div>
