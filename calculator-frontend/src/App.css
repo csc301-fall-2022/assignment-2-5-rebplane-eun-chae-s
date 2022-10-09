@@ -1,0 +1,69 @@
+html, div#root {
+  font-family: "Bahnschrift SemiBold", sans-serif;
+  background-color: #50465A;
+  color: white;
+}
+
+header {
+  background-color: #8135CC;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  padding-top: 0.5rem;
+}
+
+table {
+  width: 90%;
+  margin: auto;
+  background-color: #694F84 ;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th:nth-child(1), td:nth-child(1), th:nth-child(2), td:nth-child(2), th:nth-child(3), td:nth-child(3) {
+  width: 30%;
+}
+
+th, td {
+  color: white;
+  padding: 0.5rem;
+}
+
+th {
+    border-bottom: 1px solid #B583E8 !important;
+}
+
+.btn-custom {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: #522282 !important;
+}
+
+.btn-custom:hover {
+  background-color: #816999 !important;
+}
+
+.deleteButton {
+  background-color: #522282;
+  border: 0px;
+  border-radius: 25%;
+  color: white;
+  font-weight: bold;
+}
+
+.calculate {
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  padding: 1%;
+  margin: auto;
+  text-align: center;
+  background-color: #694F84;
+  margin-top: 2%;
+  border-radius: 5%;
+}

@@ -1,9 +1,11 @@
+import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState } from 'react';
-import Header from "./Header";
-import CreateItem from "./CreateItem";
-import Calculate from "./Calculate";
-import ItemTableHead from "./ItemTableHead";
-import Item from "./Item"
+import Header from "./components/Header";
+import CreateItem from "./components/CreateItem";
+import Calculate from "./components/Calculate";
+import ItemTableHead from "./components/ItemTableHead";
+import Item from "./components/Item";
 
 function App() {
 
@@ -44,8 +46,8 @@ function App() {
         </tbody>
       </table>
 
-      <Calculate/>
       <CreateItem addItem={addItem} />
+      <Calculate/>
     </div>
   );
 }

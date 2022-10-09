@@ -34,18 +34,18 @@ function CreateItem(props) {
     event.preventDefault();
   }
 
-  return (
-    <div className="form">
-        <form className="createItem">
-        Item Name <br/>
-        <input onChange={handleChange} name="name" value={item.name} placeholder="Item Name" required/> <br/>
-        Quantity <br/>
-        <input type="number" onChange={handleChange} name="quantity" value={item.quantity} placeholder="Quantity" required/><br/>
-        Price <br/>
-        <input type="number" onChange={handleChange} name="price" value={item.price} placeholder="Price" required/><br/>
-        <button className="largeButton" onChange={handleChange} onClick={submitItem}> Add Item </button>
-        </form>
-    </div>
+
+  return(
+    <form className="createItem">
+    <table>
+      <tbody>
+      <td><input onChange={handleChange} name="name" value={item.name} placeholder="Item Name" required/></td>
+      <td><input type="number" onChange={handleChange} name="quantity" value={item.quantity} placeholder="Quantity" required/></td>
+      <td><input type="number" onChange={handleChange} name="price" value={item.price} placeholder="Price" required/></td>
+      <td><button className="btn btn-dark btn-custom" onChange={handleChange} onClick={submitItem}> Add Item </button></td>
+      </tbody>
+    </table>
+    </form>
   );
 }
 
