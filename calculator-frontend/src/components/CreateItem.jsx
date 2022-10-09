@@ -40,10 +40,12 @@ function CreateItem(props) {
     <form className="createItem">
     <table>
       <tbody>
+      <tr>
       <td><input onChange={handleChange} name="name" value={item.name} placeholder="Item Name" required/></td>
       <td><input type="number" onChange={handleChange} name="quantity" value={item.quantity} placeholder="Quantity" required/></td>
       <td><input type="number" onChange={handleChange} name="price" value={item.price} placeholder="Price" required/></td>
-      <td><button className="btn btn-dark btn-custom" onChange={handleChange} onClick={submitItem}> Add Item </button></td>
+      <td><button className="btn btn-dark btn-custom btn-sm" onChange={handleChange} onClick={submitItem}> + </button></td>
+      </tr>
       </tbody>
     </table>
     </form>

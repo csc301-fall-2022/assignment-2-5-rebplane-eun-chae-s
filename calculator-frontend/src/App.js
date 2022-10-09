@@ -1,16 +1,18 @@
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
+import Cart from './Cart';
 import Home from './Home';
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import Login from './Login';
+import {Routes, Route} from 'react-router-dom';
 
 function App() {
   return(
-    <BrowserRouter>
       <Routes>
+        <Route path="/cart" element={<Cart />} />
         <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
-    </BrowserRouter>
   );
 }
 

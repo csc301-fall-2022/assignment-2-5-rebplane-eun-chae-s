@@ -1,21 +1,24 @@
 html, div#root {
   font-family: "Bahnschrift SemiBold", sans-serif;
-  background-color: #50465A;
+  background-color: #371B58;
   color: white;
 }
 
 header {
-  background-color: #8135CC;
+  background-color: #4C3575;
   text-align: center;
   width: 90%;
-  margin: auto;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
   padding-top: 0.5rem;
 }
 
 table {
   width: 90%;
   margin: auto;
-  background-color: #694F84 ;
+  background-color: #5B4B8A;
   border-collapse: collapse;
   text-align: center;
 }
@@ -33,10 +36,35 @@ th {
     border-bottom: 1px solid #B583E8 !important;
 }
 
+div.homePage {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font: 'Arial';
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input.form-control {
+  margin-left: 0.5rem;
+}
+
+div.loginPage {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
 .btn-custom {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-  background-color: #522282 !important;
+  background-color: #7858A6 !important;
 }
 
 .btn-custom:hover {
