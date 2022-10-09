@@ -18,8 +18,9 @@ function CreateItem(props) {
   }
 
   function submitItem(event) {
-    if (item.name !== "" && item.quantity > 0 && item.price >= 0) {
-      props.addItem(item)
+    if (item.name !== "" && item.quantity >= 0 && item.price >= 0) {
+      item.price = Math.round(item.price * 100) / 100;
+      props.addItem(item);
       {/* Reset the item state variables*/}
       setItem({
         name: "",
