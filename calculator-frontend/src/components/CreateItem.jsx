@@ -18,8 +18,9 @@ function CreateItem(props) {
   }
 
   function submitItem(event) {
-    if (item.name !== "" && item.quantity > 0 && item.price >= 0) {
-      props.addItem(item)
+    if (item.name !== "" && item.quantity >= 0 && item.price >= 0) {
+      item.price = Math.round(item.price * 100) / 100;
+      props.addItem(item);
       {/* Reset the item state variables*/}
       setItem({
         name: "",
@@ -34,18 +35,20 @@ function CreateItem(props) {
     event.preventDefault();
   }
 
-  return (
-    <div className="form">
-        <form className="createItem">
-        Item Name <br/>
-        <input onChange={handleChange} name="name" value={item.name} placeholder="Item Name" required/> <br/>
-        Quantity <br/>
-        <input type="number" onChange={handleChange} name="quantity" value={item.quantity} placeholder="Quantity" required/><br/>
-        Price <br/>
-        <input type="number" onChange={handleChange} name="price" value={item.price} placeholder="Price" required/><br/>
-        <button className="largeButton" onChange={handleChange} onClick={submitItem}> Add Item </button>
-        </form>
-    </div>
+
+  return(
+    <form className="createItem">
+    <table>
+      <tbody>
+      <tr>
+      <td><input onChange={handleChange} name="name" value={item.name} placeholder="Item Name" required/></td>
+      <td><input type="number" onChange={handleChange} name="quantity" value={item.quantity} placeholder="Quantity" required/></td>
+      <td><input type="number" onChange={handleChange} name="price" value={item.price} placeholder="Price" required/></td>
+      <td><button className="btn btn-dark btn-custom btn-sm" onChange={handleChange} onClick={submitItem}> + </button></td>
+      </tr>
+      </tbody>
+    </table>
+    </form>
   );
 }
 

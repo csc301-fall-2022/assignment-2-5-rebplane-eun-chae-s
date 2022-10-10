@@ -1,0 +1,97 @@
+html, div#root {
+  font-family: "Bahnschrift SemiBold", sans-serif;
+  background-color: #371B58;
+  color: white;
+}
+
+header {
+  background-color: #4C3575;
+  text-align: center;
+  width: 90%;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  padding-top: 0.5rem;
+}
+
+table {
+  width: 90%;
+  margin: auto;
+  background-color: #5B4B8A;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th:nth-child(1), td:nth-child(1), th:nth-child(2), td:nth-child(2), th:nth-child(3), td:nth-child(3) {
+  width: 30%;
+}
+
+th, td {
+  color: white;
+  padding: 0.5rem;
+}
+
+th {
+    border-bottom: 1px solid #B583E8 !important;
+}
+
+div.homePage {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font: 'Arial';
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input.form-control {
+  margin-left: 0.5rem;
+}
+
+div.loginPage {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.btn-custom {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: #7858A6 !important;
+}
+
+.btn-custom:hover {
+  background-color: #816999 !important;
+}
+
+.deleteButton {
+  background-color: #522282;
+  border: 0px;
+  border-radius: 25%;
+  color: white;
+  font-weight: bold;
+}
+
+.calculate {
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  padding: 1%;
+  margin: auto;
+  text-align: center;
+  background-color: #694F84;
+  margin-top: 2%;
+  border-radius: 5%;
+}

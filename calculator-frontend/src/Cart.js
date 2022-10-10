@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import Header from "./Header";
-import CreateItem from "./CreateItem";
-import Calculate from "./Calculate";
-import ItemTableHead from "./ItemTableHead";
-import Item from "./Item"
+import Header from "./components/Header";
+import CreateItem from "./components/CreateItem";
+import Calculate from "./components/Calculate";
+import ItemTableHead from "./components/ItemTableHead";
+import Item from "./components/Item";
 
-function App() {
+function Cart() {
 
   const [items, setItems] = useState([])
 
@@ -44,10 +44,10 @@ function App() {
         </tbody>
       </table>
 
-      <Calculate/>
       <CreateItem addItem={addItem} />
+      <Calculate/>
     </div>
   );
 }
 
-export default App;
+export default Cart;

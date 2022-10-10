@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import Item from "./Item"
+import React from 'react';
 
 function ItemTable(props) {
 

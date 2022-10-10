@@ -3,7 +3,7 @@ import React from 'react';
 function Calculate() {
   return (
     <div className="calculate">
-        <button className="largeButton"> Calculate </button>
+        <button type="button" className="btn btn-custom btn-dark btn-lg"> Calculate </button>
     </div>
   );
 }
