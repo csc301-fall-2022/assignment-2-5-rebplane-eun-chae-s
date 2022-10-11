@@ -14,18 +14,18 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-
-from django.urls import include
+from django.urls import path, include
+from rest_framework import routers
+from calculator import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
 
 # forward requests with the pattern "calculator/" to the module "calculator.urls"
-urlpatterns += [
-    path('calculator/', include('calculator.urls')),
-]
+# urlpatterns += [
+#     path('calculator/', include('calculator.urls')),
+# ]
 
 # redirect the root URL of the site
 from django.views.generic import RedirectView
@@ -40,3 +40,22 @@ from django.conf.urls.static import static
 
 urlpatterns += static(settings.STATIC_URL,
 document_root=settings.STATIC_ROOT)
+
+router = routers.DefaultRouter()
+router.register(r'items', views.ItemView)
+urlpatterns += [
+    path('api/', include(router.urls))
+]
+
+
+# add Django site authentication urls
+urlpatterns += [
+    path('accounts/',
+    include('django.contrib.auth.urls')),
+]
+
+# default view for decoding received JWTs
+from rest_framework_jwt.views import obtain_jwt_token
+urlpatterns += [
+    path('token-auth/', obtain_jwt_token)
+]
