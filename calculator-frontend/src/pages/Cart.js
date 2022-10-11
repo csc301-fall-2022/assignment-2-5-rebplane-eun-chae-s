@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import Header from "./components/Header";
-import CreateItem from "./components/CreateItem";
-import Calculate from "./components/Calculate";
-import ItemTableHead from "./components/ItemTableHead";
-import Item from "./components/Item";
+import Header from "../components/Header";
+import CreateItem from "../components/CreateItem";
+import Calculate from "../components/Calculate";
+import ItemTableHead from "../components/ItemTableHead";
+import Item from "../components/Item";
 
 function Cart() {
 

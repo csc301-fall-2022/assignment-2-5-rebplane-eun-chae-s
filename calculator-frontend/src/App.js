@@ -1,9 +1,9 @@
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
-import Cart from './Cart';
-import Home from './Home';
-import Login from './Login';
+import Cart from './pages/Cart';
+import Home from './pages/Home';
+import Login from './pages/Login';
 import {Routes, Route} from 'react-router-dom';
 
 function App() {
