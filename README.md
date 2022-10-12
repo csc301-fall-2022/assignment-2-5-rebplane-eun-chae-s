@@ -1,5 +1,6 @@
 # Deployment
-The deployed application can be found here: INSERT LINK WHEN DEPLOYED
+The deployed application can be found here: 
+### INSERT LINK WHEN DEPLOYED
 
 # Work
 All code can be found in our repository and is live on the deployed server (link above).
@@ -19,9 +20,10 @@ Open a terminal and clone the repository into your desired directory with
 cd into the project folder with
 <pre><code>cd assignment-2-5-rebplane-eun-chae-s</code></pre>
 
-TODO: NEED TO REARRANGE THE FILES BECAUSE HEROKU LIKES THEM IN THE ROOT DIRECTORY
+### TODO: NEED TO REARRANGE THE FILES BECAUSE HEROKU LIKES THEM IN THE ROOT DIRECTORY
 
-Add the Django dependencies: (NOT SURE ABOUT THE FULL LIST, WILL CHECK LATER AND EDIT)
+Add the Django dependencies: 
+### (NOT SURE ABOUT THE FULL LIST, WILL CHECK LATER AND EDIT)
 <pre><code>pip install django djangorestframework django-cors-headers</code></pre>
 Then, run the server:
 <pre><code>python manage.py runserver</code></pre>
@@ -32,3 +34,5 @@ Run the frontend with:
 <pre><code>npm start</code></pre>
 
 You should be able to access the app at http://localhost:3000 
+
+### TO DO: CREATE TEST AND TESTING PROVIDE TESTING INSTRUCTIONS
