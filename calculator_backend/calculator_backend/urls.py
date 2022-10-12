@@ -15,36 +15,39 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from rest_framework import routers
-from calculator import views
+# from rest_framework import routers
+# from calculator import views
+# from calculator_backend import calculator
 
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
 
-# forward requests with the pattern "calculator/" to the module "calculator.urls"
+# forward requests with the pattern "/" to the module "calculator.urls"
 # urlpatterns += [
 #     path('calculator/', include('calculator.urls')),
 # ]
 
 # redirect the root URL of the site
-from django.views.generic import RedirectView
+# from django.views.generic import RedirectView
 
-urlpatterns += [
-    path('', RedirectView.as_view(url='calculator/', permanent=True))
-]
+# urlpatterns += [
+#     path('', RedirectView.as_view(url='/calculator/', permanent=True))
+# ]
 
 # let the development web server serve static files
 from django.conf import settings
 from django.conf.urls.static import static
+# from rest_framework_simplejwt.views import TokenRefreshView
 
 urlpatterns += static(settings.STATIC_URL,
 document_root=settings.STATIC_ROOT)
 
-router = routers.DefaultRouter()
-router.register(r'items', views.ItemView)
+# router = routers.DefaultRouter()
+# router.register(r'items', views.ItemView)
+
 urlpatterns += [
-    path('api/', include(router.urls))
+    path('api/', include("calculator.urls"))
 ]
 
 
