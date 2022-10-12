@@ -35,4 +35,4 @@ Run the frontend with:
 
 You should be able to access the app at http://localhost:3000 
 
-### TO DO: CREATE TEST AND TESTING PROVIDE TESTING INSTRUCTIONS
+### TO DO: CREATE TEST AND PROVIDE TESTING INSTRUCTIONS
