@@ -18,7 +18,7 @@ All three are mature frameworks with a relatively large number of developers sup
 ### Domains covered:
 Python allows development with machine learning and has a vast amount of libraries available. NodeJS also has a vast amount of libraries available. 
 ### Popularity:
-From the Stack Overflow 2021 Survey, for languages, JavaScript is the top language used among developers, Python is the 3rd most used language - thus, writing with Python or JavaScript was appealing to us. In regards to backend frameworks,on the Stack Overflow 2021 Survey for frameworks Django is 5th in popularity, Express (for Node) was first, and Flask is 4th. Thus, all three frameworks we chose are highly popular.
+From the JetBrains Developer Ecosystem Report, for languages, JavaScript is the top language used among developers, and Python is the 3rd most popular language - thus, writing with Python or JavaScript was appealing to us. In regards to backend frameworks,on the Stack Overflow 2021 Survey for frameworks Django, Express and Flask are all among the top 6 most loved frameworks.
 ### Databases:
 Django has great database support for non-relational databases, with its default being SQLite. Flask as well has great support for non-relational databases, however it's more complex to set up. NodeJS supports both relational and non-relational databases, with libraries that make them easy to set up, such as Mongoose for MongoDB.
 ### Conclusion:
@@ -35,7 +35,7 @@ Two of them are relational databases (SQLite, PostgreSQL) and MongoDB is a NoSQL
 ### Maturity:
 SQL is more mature as they have been around longer and are supported by large communities. NoSQL has not been around as long, thus it is not as mature, however its community is growing fast.
 ### Popularity:
-From the StackOverflow 2021 Survey, the top 4 databases in this order are MySQL, PostgreSQL, SQLite and MongoDB. As we can see, the top 3 are relational databases, with PostgreSQL and SQLite being highly popular choices. MongoDB follows closely behind them.
+From the StackOverflow 2021 Survey, PostgreSQL and MongoDB are the 2nd and 3rd most popular databases, and SQLite is 8th. PostgreSQL and MongoDB are thus very popular choices. More recruiters also recruit for PostgreSQL and MongoDB.
 
 Now that we have compared relational vs. non-relational databases, we will now compare the two relational database options we chose for Django as our backend.
 
