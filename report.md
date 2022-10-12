@@ -3,18 +3,18 @@
 ## Summary of our decisions (1a)
 We decided to build a web application with the basic calculator functions (add item, delete item, calculate with taxes, with discount) and user authentication. Our tech stack is React (frontend), Django (backend), PostgreSQL (database). For our frontend, we decided to use React. We use CSS and Bootstrap for styling. We use Axios to send requests to our backend API (Django). For our backend, we decided to use Python Django with REST framework to create a Django REST API. For user authentication with Django, we decided to use Django's JSON Web Token Authentication (subject to change, just from looking at the backend imports). For our database, we decided to use PostgreSQL. We chose Heroku for our deployment of our frontend and backend, and Heroku Postgres again for our database.
 
-#Frontend:
-##Options:
+# Frontend:
+## Options:
 Three options we had for our frontend were React, Vue, and Angular. 
-##Ease of development:
+## Ease of development:
 As React and Vue use JavaScript, and for Angular we'd need to learn TypeScript, React/Vue seemed to be the better choice for us, as we are both familiar with working JavaScript. Angular is also much more difficult to learn than React and Vue. 
-##Performance, scale, and speed:
+## Performance, scale, and speed:
 In terms of performance and speed, Vue is the best performing of the three. However, React is best for complex projects and has better scalability.
-##Maturity:
+## Maturity:
 Angular is more mature than both React and Vue, and has been around for the longest amount of time. React is also a mature framework with a large community of developers and support. Vue is newer than the other two, but is starting to become big as well.
-##Popularity:
+## Popularity:
 React is the most popular frontend framework, with many job recruiters looking for React experience/developers - the job market for React developers is great. Most people use React due to the ease of learning and its flexibility. All three of these frameworks, however, are among the top 5 most loved frameworks on the Stack Overflow 2021 survey (with React the highest) thus are all extremely popular.
-##Final decision:
+## Final decision:
 We decided to go with React as it is the most popular frontend framework and React developers are widely sought. As well, it is easier to learn than Angular and due to its popularity, has lots of great documentation and videos on the topic.
 
 
