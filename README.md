@@ -14,5 +14,5 @@ Git installation: https://git-scm.com/downloads
 Node.js installation: https://nodejs.org/en/download/
 
 Open a terminal and clone the repository into your desired directory with
-<pre><code>git clone https://github.com/csc301-fall-2022/assignment-2-5-rebplane-eun-chae-s.git</code></pre>
+<code>git clone https://github.com/csc301-fall-2022/assignment-2-5-rebplane-eun-chae-s.git</code>
 
