@@ -49,13 +49,13 @@ urlpatterns += [
 
 
 # add Django site authentication urls
-urlpatterns += [
-    path('accounts/',
-    include('django.contrib.auth.urls')),
-]
+# urlpatterns += [
+#     path('accounts/',
+#     include('django.contrib.auth.urls')),
+# ]
 
 # default view for decoding received JWTs
-from rest_framework_jwt.views import obtain_jwt_token
-urlpatterns += [
-    path('token-auth/', obtain_jwt_token)
-]
+# from rest_framework_jwt.views import obtain_jwt_token
+# urlpatterns += [
+#     path('token-auth/', obtain_jwt_token)
+# ]
