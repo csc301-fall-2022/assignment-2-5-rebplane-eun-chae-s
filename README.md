@@ -28,8 +28,7 @@ Add the Django dependencies:
 Then, run the server:
 <pre><code>python manage.py runserver</code></pre>
 
-Open a new terminal window (keep the old one running in the background):
-Run the frontend with:
+Open a new terminal window (keep the old one running in the background). Run the frontend with:
 <pre><code>npm install</code></pre>
 <pre><code>npm start</code></pre>
 
