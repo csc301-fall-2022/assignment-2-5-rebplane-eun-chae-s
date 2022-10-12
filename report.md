@@ -16,7 +16,7 @@ In terms of speed, Flask is faster than Django, and Django is faster than Node. 
 ### Maturity:
 All three are mature frameworks with a relatively large number of developers supporting them. NodeJS however, has a much larger developer community than the other two.
 ### Domains covered:
-Python allows development with Machine Learning and has a vast amount of libraries available. NodeJS also has a vast amount of libraries available. 
+Python allows development with machine learning and has a vast amount of libraries available. NodeJS also has a vast amount of libraries available. 
 ### Popularity:
 From the Stack Overflow 2021 Survey, for languages, JavaScript is the top language used among developers, Python is the 3rd most used language - thus, writing with Python or JavaScript was appealing to us. In regards to backend frameworks,on the Stack Overflow 2021 Survey for frameworks Django is 5th in popularity, Express (for Node) was first, and Flask is 4th. Thus, all three frameworks we chose are highly popular.
 ### Databases:
