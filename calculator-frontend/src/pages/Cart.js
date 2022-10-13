@@ -1,12 +1,14 @@
-import React, { useEffect, useState } from "react";
-import Header from "./components/Header";
-import CreateItem from "./components/CreateItem";
-import Calculate from "./components/Calculate";
-import ItemTableHead from "./components/ItemTableHead";
-import Item from "./components/Item";
+import React, { useContext, useState, useEffect } from "react";
+import Header from "../components/Header";
+import CreateItem from "../components/CreateItem";
+import Calculate from "../components/Calculate";
+import ItemTableHead from "../components/ItemTableHead";
+import Item from "../components/Item";
 import axios from "axios";
+import AuthContext from "../context/AuthContext";
 
 function Cart() {
+  const { user } = useContext(AuthContext);
   const [items, setItems] = useState([]);
 
   useEffect(() => {
@@ -43,6 +45,7 @@ function Cart() {
 
   return (
     <div>
+      {/* {user && <div>Hello, {user.username}</div>} */}
       <Header />
       <ItemTableHead />
       {/* Maps the items in the array items to the table to be displayed*/}
