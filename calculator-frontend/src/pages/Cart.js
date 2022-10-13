@@ -8,27 +8,36 @@ import axios from "axios";
 import AuthContext from "../context/AuthContext";
 
 function Cart() {
-  const { user } = useContext(AuthContext);
+  const { user, authTokens } = useContext(AuthContext);
   const [items, setItems] = useState([]);
 
   useEffect(() => {
     axios
-      .get("/api/items/")
+      .get("/api/items/", {
+        headers: {
+          'Authorization': "Bearer " + String(authTokens.access)
+        }
+      })
       .then((res) => setItems(res.data))
       .catch((err) => console.log(err));
   }, []);
 
   function addItem(item) {
-    if (items.length === 0) {
-      item.id = 1;
-    } else {
-      item.id = items[items.length - 1].id + 1;
-    }
 
     // axios.put: for editing new one
-    axios.post("/api/items/", item).then((res) => {
+    axios.post("/api/items/", item, {
+      headers: {
+        'Content-Type': "application/json",
+        'Authorization': "Bearer " + String(authTokens.access)
+      }
+    }).then((res) => {
       axios
-        .get("/api/items/")
+        .get("/api/items/",{
+          headers: {
+            'Content-Type': "application/json",
+            'Authorization': "Bearer " + String(authTokens.access)
+          }
+        })
         .then((res) => setItems(res.data))
         .catch((err) => console.log(err));
     });
@@ -51,8 +60,8 @@ function Cart() {
       {/* Maps the items in the array items to the table to be displayed*/}
       <table>
         <tbody>
-          {/* Send the mapped values to map to Item rows*/}
-          {items.map((item, index) => {
+          {/* Send the mapped values to map to Item rows (if there are items)*/}
+          {Object.keys(items).length !== 0 && items.map((item, index) => {
             return (
               <Item
                 key={index}
