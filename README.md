@@ -23,8 +23,7 @@ cd into the project folder with
 ### TODO: NEED TO REARRANGE THE FILES BECAUSE HEROKU LIKES THEM IN THE ROOT DIRECTORY
 
 Add the Django dependencies: 
-### (NOT SURE ABOUT THE FULL LIST, WILL CHECK LATER AND EDIT)
-<pre><code>pip install django djangorestframework django-cors-headers</code></pre>
+<pre><code>pip install django djangorestframework django-cors-headers djangorestframework-simplejwt</code></pre>
 Then, run the server:
 <pre><code>python manage.py runserver</code></pre>
 
