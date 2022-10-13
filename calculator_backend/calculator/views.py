@@ -32,7 +32,7 @@ class RegisterView(generics.ListCreateAPIView):
 #         print(self.request.user)
 #         return Item.objects.filter(user=self.request.user.id)
     
-@api_view(['GET', 'POST'])
+@api_view(['GET', 'POST', 'DELETE'])
 @permission_classes([IsAuthenticated])
 def getItems(request):
     if request.method == 'GET':
@@ -44,6 +44,15 @@ def getItems(request):
         item = Item.objects.create(name=data['name'], quantity=data['quantity'], price=data['price'], user=request.user)
         serializer = ItemSerializer(item, many=False)
         return Response(serializer.data)
+
+@api_view(['DELETE'])
+@permission_classes([IsAuthenticated])
+def getItem(request, pk):
+    print(request.user)
+    if request.method == 'DELETE':
+        item = Item.objects.filter(id=pk)
+        item.delete()
+        return Response("Item was successfully deleted")
     
 
 @api_view(['GET'])

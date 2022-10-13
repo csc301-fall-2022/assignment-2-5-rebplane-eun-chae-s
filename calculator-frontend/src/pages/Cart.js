@@ -44,9 +44,19 @@ function Cart() {
   }
 
   function deleteItem(id) {
-    axios.delete(`/api/items/${id}`).then((res) => {
+    axios.delete(`/api/items/${id}/`, {
+      headers: {
+        'Content-Type': "application/json",
+        'Authorization': "Bearer " + String(authTokens.access)
+      }
+    }).then((res) => {
       axios
-        .get("/api/items/")
+        .get("/api/items/", {
+          headers: {
+            'Content-Type': "application/json",
+            'Authorization': "Bearer " + String(authTokens.access)
+          }
+        })
         .then((res) => setItems(res.data))
         .catch((err) => console.log(err));
     });
@@ -61,7 +71,7 @@ function Cart() {
       <table>
         <tbody>
           {/* Send the mapped values to map to Item rows (if there are items)*/}
-          {Object.keys(items).length !== 0 && items.map((item, index) => {
+          {items.map((item, index) => {
             return (
               <Item
                 key={index}
