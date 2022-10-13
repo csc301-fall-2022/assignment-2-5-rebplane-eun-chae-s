@@ -54,6 +54,15 @@ def getItem(request, pk):
         item.delete()
         return Response("Item was successfully deleted")
     
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def calculate(request):
+    print(request.user)
+    items = Item.objects.filter(user=request.user)
+    price = 0
+    for item in items:
+        price += item.price * item.quantity
+    return Response(price)
 
 @api_view(['GET'])
 def getRoutes(request):
