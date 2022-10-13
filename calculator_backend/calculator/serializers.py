@@ -37,4 +37,4 @@ class RegisterSerializer(serializers.ModelSerializer):
 class ItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = Item
-        fields = ('id', 'name', 'quantity', 'price')
+        fields = '__all__'
