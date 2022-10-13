@@ -34,9 +34,19 @@ function Calculate(props) {
         required
       />
       <br />
-      {/* These will only display if total or grandTotal is not null (i.e., calculate button was just clicked)*/}
-      {props.total && <h3>Your total is: {props.total} </h3>}
-      {props.grandTotal && <h3>Your grand total is: {props.grandTotal} </h3>}
+      <div className="result">
+        {/* These will only display if total or grandTotal is not null (i.e., calculate button was just clicked)*/}
+        {props.total && (
+          <h3>
+            <b>Total:</b> $ {props.total}{" "}
+          </h3>
+        )}
+        {props.grandTotal && (
+          <h3>
+            <b>Grand total:</b> $ {props.grandTotal}{" "}
+          </h3>
+        )}
+      </div>
       <button
         type="button"
         className="btn btn-custom btn-dark btn-lg"

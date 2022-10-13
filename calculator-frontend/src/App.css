@@ -96,6 +96,7 @@ div.loginPage {
 
 .calculate {
   text-align: center;
+  margin-top: 20px;
 }
 
 .form {
@@ -110,9 +111,13 @@ div.loginPage {
   border-radius: 5%;
 }
 
-#taxes, 
+#taxes,
 #discount {
   width: 10%;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+
+.result {
+  margin: 30px;
 }

@@ -81,7 +81,7 @@ function Cart() {
         })
         .then((res) => {
           console.log(res.data);
-          setTotal(res.data);
+          setTotal(res.data.toFixed(2));
           setGrandTotal(
             (res.data * (1 - discount / 100) * (1 + taxes / 100)).toFixed(2)
           );
