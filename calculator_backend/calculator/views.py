@@ -10,19 +10,25 @@ from .models import Item
 from rest_framework_simplejwt.views import TokenObtainPairView
 from django.contrib.auth.models import User
 from rest_framework.permissions import AllowAny, IsAuthenticated
+# from django.contrib.auth.mixins import LoginRequiredMixin
+
 
 class MyTokenObtainPairView(TokenObtainPairView):
     serializer_class = MyTokenObtainPairSerializer
 
-class RegisterView(generics.CreateAPIView):
+class RegisterView(generics.ListCreateAPIView):
     queryset = User.objects.all()
     permission_classes = (AllowAny,)
     serializer_class = RegisterSerializer
 
 # Create your views here.
 class ItemView(viewsets.ModelViewSet):
+    # permission_classes = [IsAuthenticated]
+    model = Item
     serializer_class = ItemSerializer
-    queryset = Item.objects.all()
+    def get_queryset(self):
+        return Item.objects.filter(user=self.request.user.id)
+    
 
 @api_view(['GET'])
 def getRoutes(request):

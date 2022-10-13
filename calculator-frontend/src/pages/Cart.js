@@ -45,7 +45,7 @@ function Cart() {
 
   return (
     <div>
-      {/* {user && <div>Hello, {user.username}</div>} */}
+      {user && <div>Hello, {user.username}</div>}
       <Header />
       <ItemTableHead />
       {/* Maps the items in the array items to the table to be displayed*/}
@@ -60,6 +60,7 @@ function Cart() {
                 name={item.name}
                 quantity={item.quantity}
                 price={item.price}
+                user={user.user_id}
                 deleteItem={deleteItem}
               />
             );
