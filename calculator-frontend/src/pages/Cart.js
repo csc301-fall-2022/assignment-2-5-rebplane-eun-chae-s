@@ -10,6 +10,10 @@ import AuthContext from "../context/AuthContext";
 function Cart() {
   const { user, authTokens } = useContext(AuthContext);
   const [items, setItems] = useState([]);
+  const [total, setTotal] = useState(null);
+  const [grandTotal, setGrandTotal] = useState(null);
+  const [taxes, setTaxes] = useState(0);
+  const [discount, setDiscount] = useState(0);
 
   useEffect(() => {
     axios
@@ -62,6 +66,16 @@ function Cart() {
     });
   }
 
+  function calculateTotal() {
+    if (0 <= discount && discount <= 1 && 0 <= taxes && taxes <= 1) {
+      // api call here
+      console.log("valid discount and taxes")
+    } else {
+      alert("Plase enter valid discount and taxes (between 0 and 1)")
+    }
+
+  }
+
   return (
     <div>
       {user && <div>Hello, {user.username}</div>}
@@ -87,8 +101,8 @@ function Cart() {
         </tbody>
       </table>
 
-      <CreateItem addItem={addItem} />
-      <Calculate />
+      <CreateItem addItem={addItem} total={total} grandTotal={grandTotal}/>
+      <Calculate calculateTotal={calculateTotal} setDiscount={setDiscount} setTaxes={setTaxes} taxes={taxes} discount={discount}/>
     </div>
   );
 }
