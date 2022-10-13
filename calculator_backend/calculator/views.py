@@ -1,3 +1,6 @@
+'''
+Followed tutorial from this link: https://github.com/sushil-kamble/django-react-auth
+'''
 from django.shortcuts import render
 from rest_framework import viewsets, generics
 from rest_framework.decorators import api_view

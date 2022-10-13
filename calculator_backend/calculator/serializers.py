@@ -1,3 +1,6 @@
+'''
+Followed tutorial from this link: https://github.com/sushil-kamble/django-react-auth
+'''
 from rest_framework import serializers
 from .models import Item
 from django.contrib.auth.models import User
