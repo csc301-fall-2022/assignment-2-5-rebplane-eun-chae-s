@@ -41,9 +41,9 @@ Three options we had for our backend were **Django, NodeJS,** and **Flask**.
 
 Django and Flask are Python web frameworks, and NodeJS is using JavaScript. As both of us have experience coding in Python and JavaScript, these three were our top choices to consider.
 
-### Performance, scale and speed:
+### Performance, Scability, and Deveopment speed:
 
-In terms of speed, among three frameworks, Flask is the fastest one while Node is the slowest one. This is due to Flask and Django being more dynamic compared to Node. All three are also scalable frameworks, but Django and Flask are more scalable than Node. In regards to performance, NodeJS usually has better performance than Django and Flask.
+In terms of development speed, among three frameworks, Flask is the fastest one while Node is the slowest one. This is due to Flask and Django provide built-in templates and modules and more dynamic while Node is for customization. But we can write less code in Flask compared to Django for the same functionality. All three are also scalable frameworks, but Django and Flask are more scalable than Node. In regards to performance, NodeJS usually has better performance than Django and Flask.
 
 ### Maturity:
 
@@ -85,14 +85,24 @@ SQL is more mature as they have been around longer and are supported by large co
 
 ### Popularity:
 
-From the StackOverflow 2021 Survey, PostgreSQL and MongoDB are the 2nd and 3rd most popular databases, and SQLite is 8th. PostgreSQL and MongoDB are thus very popular choices. More recruiters also recruit for PostgreSQL and MongoDB.
+According to the StackOverflow 2021 Survey, PostgreSQL and MongoDB are the 2nd and 3rd most popular databases, and SQLite is 8th. PostgreSQL and MongoDB are thus very popular choices. More recruiters also recruit for PostgreSQL and MongoDB.
 
 Now that we have compared relational vs. non-relational databases, we will now compare the two relational database options we chose for Django as our backend.
 
 ## SQLite vs. PostgreSQL:
 
-SQLite is typically used in development environments, as Django has a local SQLite database when the project is first initialized. However, PostgreSQL is typically used in production with Django. SQLite is also not very good for very large databases and with lots of write operations, as SQLite only allows one operation at a time. However, as we were to deploy on Heroku, Heroku has only ephemeral support for SQLite on Heroku, and has great support for PostgreSQL.
+SQLite is typically used in development environments, as Django has a local SQLite database when the project is first initialized. However, PostgreSQL is typically used in production with Django, as recommended by the official documentation of Django. SQLite is also not very good for very large databases and with lots of write operations, as SQLite only allows one operation at a time. However, as we were to deploy on Heroku, Heroku has only ephemeral support for SQLite on Heroku, and has great support for PostgreSQL.
 
 ## Final decision:
 
-As there were more pros on using a relational database with our project than a non-relational one, we decided to use either SQLite or PostgreSQL. Then, we made a final decision for suing PostgreSQL as Heroku provides support for it and it is what is typically used in production with Django.
+As there were more advantages on using a relational database with our project than a non-relational one, we decided to use either SQLite or PostgreSQL. Then, we made a final decision for suing PostgreSQL as Heroku provides support for it and it is what is typically used in production with Django.
+
+# References
+- Daityari, Shaumik. “Angular vs React vs Vue: Which Framework to Choose in 2022.” CodeinWP, VertiStudio, 17 Aug. 2022, https://www.codeinwp.com/blog/angular-vs-vue-vs-react/. 
+- “Django vs Node.js: Which One Is Best for Your next Project?” APPWRK IT Solutions, 7 Oct. 2022, https://appwrk.com/django-vs-node-js-which-one-is-best-for-your-next-project#:~:text=Django%20allows%20Python%20usage%20in,to%20develop%20the%20web%20servers. 
+- “Documentation.” Django, https://docs.djangoproject.com/en/4.1/topics/install/#database-installation. 
+- Espinel, Andrés. “Django vs Node.js: Which One Is Better for Web Development?” Medium, Dev Genius, 14 May 2022, https://blog.devgenius.io/django-vs-node-js-which-one-is-better-for-web-development-58b4c66c6dee. 
+- Singh, Vijay. “Flask vs Django in 2022: Which Framework to Choose?” Hackr.io, https://hackr.io/blog/flask-vs-django. 
+- “SQL VS NOSQL: Differences, Databases, and Decisions.” Talend, https://www.talend.com/resources/sql-vs-nosql/#:~:text=SQL%20is%20the%20programming%20language,generally%20do%20not%20use%20SQL. 
+- “Stack Overflow Developer Survey 2021.” Stack Overflow, https://insights.stackoverflow.com/survey/2021. 
+- “The State of Developer Ecosystem in 2021 Infographic.” JetBrains, https://www.jetbrains.com/lp/devecosystem-2021/. 
