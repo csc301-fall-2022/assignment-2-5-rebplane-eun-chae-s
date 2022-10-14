@@ -50,3 +50,12 @@ Add the Django dependencies:
 <pre><code>pip install django djangorestframework django-cors-headers djangorestframework-simplejwt django-on-heroku</code></pre>
 Then, run the tests:
 <pre><code>python manage.py test</code></pre>
+
+# Citation of code
+For **User authentication** in backend and frontend:
+- Kamble, Sushil. “Django Rest Framework + REACT -  Authentication Workflow 2022 (Part 1).” Medium, Medium, 13 Mar. 2022, https://sushil-kamble.medium.com/django-rest-framework-react-authentication-workflow-2022-part-1-a21f22b3f358. 
+- Kamble, Sushil. “Django Rest Framework + REACT - Authentication Workflow 2022 (Part 2).” Medium, Dev Genius, 1 Mar. 2022, https://blog.devgenius.io/django-rest-framework-react-authentication-workflow-2022-part-2-d299b7fef875. 
+- https://github.com/sushil-kamble/django-react-auth
+
+For writing test cases:
+- Ivanov, Ximiz, et al. “How Can I Use JWT Token in DRF Tests?” Stack Overflow, 1 Oct. 1967, https://stackoverflow.com/questions/62709479/how-can-i-use-jwt-token-in-drf-tests. 
