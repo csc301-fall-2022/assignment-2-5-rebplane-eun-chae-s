@@ -23,7 +23,7 @@ cd into the project folder with
 ### TODO: NEED TO REARRANGE THE FILES BECAUSE HEROKU LIKES THEM IN THE ROOT DIRECTORY
 
 Add the Django dependencies: 
-<pre><code>pip install django djangorestframework django-cors-headers djangorestframework-simplejwt</code></pre>
+<pre><code>pip install django djangorestframework django-cors-headers djangorestframework-simplejwt django-on-heroku</code></pre>
 Then, run the server:
 <pre><code>python manage.py runserver</code></pre>
 
