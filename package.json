@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "homepage": ".",
-  "proxy": "http://127.0.0.1:8000/",
+  "proxy": "https://assignment2-calculator.herokuapp.com/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -38,14 +38,14 @@
       "not dead",
       "not op_mini all"
     ],
-    "engines": {
-      "node": "16.x",
-      "npm": "7.x"
-  },
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "engines": {
+    "node": "16.x",
+    "npm": "7.x"
+}
 }
