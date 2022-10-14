@@ -1,6 +1,6 @@
 # Deployment
 The deployed application can be found here: 
-### INSERT LINK WHEN DEPLOYED
+https://assignment2-calculator.herokuapp.com/
 
 # Work
 All code can be found in our repository and is live on the deployed server (link above).
@@ -19,8 +19,6 @@ Open a terminal and clone the repository into your desired directory with
 
 cd into the project folder with
 <pre><code>cd assignment-2-5-rebplane-eun-chae-s</code></pre>
-
-### TODO: NEED TO REARRANGE THE FILES BECAUSE HEROKU LIKES THEM IN THE ROOT DIRECTORY
 
 Add the Django dependencies: 
 <pre><code>pip install django djangorestframework django-cors-headers djangorestframework-simplejwt django-on-heroku</code></pre>
