@@ -31,7 +31,7 @@ Open a new terminal window (keep the old one running in the background). Run the
 
 You should be able to access the app at http://localhost:3000 
 
-# Testing our unit tests locally
+# Running our tests locally:
 In order to run the tests locally, you should have Python, Git, and Node.js installed.
 
 Python installation: https://www.python.org/downloads/
