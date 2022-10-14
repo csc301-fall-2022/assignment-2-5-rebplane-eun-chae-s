@@ -5,8 +5,9 @@ import { useNavigate } from "react-router-dom";
 function Home(props) {
   const navigate = useNavigate();
   return (
-    <div className="homePage">
+    <div>
       <Header />
+    <div className="homePage">
       <h3> Welcome to our pricing calculator!</h3>
       <h4> Please log in or create an account to begin.</h4>
       <button
@@ -30,6 +31,7 @@ function Home(props) {
         {" "}
         Create an account{" "}
       </button>
+    </div>
     </div>
   );
 }
