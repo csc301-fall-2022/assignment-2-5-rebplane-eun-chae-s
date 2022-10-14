@@ -5,7 +5,7 @@ https://assignment2-calculator.herokuapp.com/
 # Work
 All code can be found in our repository and is live on the deployed server (link above).
 
-# Running the application locally and testing locally
+# Running the application locally
 In order to run the app locally, you should have Python, Git, and Node.js installed.
 
 Python installation: https://www.python.org/downloads/
@@ -31,4 +31,9 @@ Open a new terminal window (keep the old one running in the background). Run the
 
 You should be able to access the app at http://localhost:3000 
 
-### TO DO: CREATE TEST AND PROVIDE TESTING INSTRUCTIONS
+# Testing locally
+cd into the project folder with
+<pre><code>cd assignment-2-5-rebplane-eun-chae-s</code></pre>
+Run the tests with
+cd into the project folder with
+<pre><code>python manage.py test</code></pre>
