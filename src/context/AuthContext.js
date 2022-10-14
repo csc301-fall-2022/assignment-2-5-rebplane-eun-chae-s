@@ -44,7 +44,7 @@ export const AuthProvider = ({ children }) => {
       localStorage.setItem("authTokens", JSON.stringify(data));
       navigate("/cart");
     } else {
-      alert("Something went wrong");
+      alert("Incorrect credentials");
     }
   };
 
@@ -65,7 +65,7 @@ export const AuthProvider = ({ children }) => {
     if (response.status === 201) {
       navigate("/login");
     } else {
-      alert("Something went wrong");
+      alert("The username you entered already exists");
     }
   };
 
