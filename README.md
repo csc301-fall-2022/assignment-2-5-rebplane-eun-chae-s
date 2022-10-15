@@ -51,6 +51,17 @@ Add the Django dependencies:
 Then, run the tests:
 <pre><code>python manage.py test</code></pre>
 
+
+In case you cannot run the test, try the following commands:
+
+- Install virtual environment:
+  <pre><code>pip install pipenv</code></pre>
+- Run virtual environment:
+  - Option 1: <pre><code>pipenv shell</code></pre>
+  - Option 2: <pre><code>python -m pipenv shell</code></pre>
+- Add Django dependencies (use command above)
+- Run the test: <pre><code>python manage.py test</code></pre>
+
 # Citation of code
 For **User authentication** in backend and frontend:
 - Kamble, Sushil. “Django Rest Framework + REACT -  Authentication Workflow 2022 (Part 1).” Medium, Medium, 13 Mar. 2022, https://sushil-kamble.medium.com/django-rest-framework-react-authentication-workflow-2022-part-1-a21f22b3f358. 
