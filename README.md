@@ -21,7 +21,7 @@ cd into the project folder with
 <pre><code>cd assignment-2-5-rebplane-eun-chae-s</code></pre>
 
 Add the Django dependencies: 
-<pre><code>pip install django djangorestframework django-cors-headers djangorestframework-simplejwt django-on-heroku</code></pre>
+<pre><code>pip install django djangorestframework django-cors-headers djangorestframework-simplejwt psycopg2-binary django-on-heroku</code></pre>
 Then, run the server:
 <pre><code>python manage.py runserver</code></pre>
 
